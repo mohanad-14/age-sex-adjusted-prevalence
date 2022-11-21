@@ -104,7 +104,7 @@ One text file with all the results (prevalence of diseases) will be written out 
 
 Please note that the output numbers and estimates may not be realistic as this is just an example to show how the function works.
 
-An example of a printed output data is given below:
+**An example of a printed output data is given below:
 
 
 Age-sex-adjusted prevalence for ['asthma'] is 1300.0 per 10,000 ( 1171.1 , 2771.1 )
@@ -119,7 +119,7 @@ Age-sex-adjusted prevalence for ['hypertension'] is 3150.0 per 10,000 ( 967.2 , 
 Age-sex-adjusted prevalence for ['depression'] is 2450.0 per 10,000 ( 489.6 , 4410.4 )
 
 
-An example of a written text file is given below:
+**An example of a written text file is given below:**
 
 | disease | Age-sex-adjusted prevalence | CI | 
 | ------------- | ------------- | ------------
