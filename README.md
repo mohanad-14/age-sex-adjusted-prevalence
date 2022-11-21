@@ -7,8 +7,6 @@ The calculated estimates of diseases can be then used to compare with other esti
 
 The given example of the function uses the 2021 England Census as a standard population to determine the percentage for each age-sex group by 10-year age group. Also, the population size of 10,000 is used in the example. 
 
-(refer to step . You can download the census data from the Office for National Statistics’ s website (found at https://www.ons.gov.uk/census).
-
 # Steps for calculating the age-sex-adjusted rate:
 **Step 1: Break up the population:**
 
