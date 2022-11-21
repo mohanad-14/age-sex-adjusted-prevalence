@@ -30,7 +30,7 @@ Multiply each age-gender specific rate by the percent of the standard population
 
 Add up the weighted age-specific rates calculated in step 4. The sum of these values is the age-gender adjusted rate for that group of the dataset.
 
-**Step 5: Calculate the 95% CI for the estimates**
+**Step 6: Calculate the 95% CI for the estimates**
 
 The formula used in this script is as follows:
 
@@ -47,7 +47,7 @@ SE = standard error
 The estimated SE can then be used to compute a 95% confidence interval (CI) for the rate. The
 standard formula for determining the 95% CI of a rate is:
 
-R ± (1.96 x SE)
+CI = R ± (1.96 x SE)
 
 # Input data
 In order for this function to work, you need three prepared datasets that can be analysed and merged in the process. 
@@ -100,9 +100,11 @@ An example of census data (2021 English census data) is given below.
 
 # Output
 
+One text file with all the results (prevalence of diseases) will be written out as dataframe. Also, the results will be printed out as strings in the output section. 
+
 Please note that the output numbers and estimates may not be realistic as this is just an example to show how the function works.
 
-An example of output data is given below:
+An example of a printed output data is given below:
 
 
 Age-sex-adjusted prevalence for ['asthma'] is 1300.0 per 10,000 ( 1171.1 , 2771.1 )
@@ -115,3 +117,14 @@ Age-sex-adjusted prevalence for ['hypertension'] is 3150.0 per 10,000 ( 967.2 , 
 
 
 Age-sex-adjusted prevalence for ['depression'] is 2450.0 per 10,000 ( 489.6 , 4410.4 )
+
+
+An example of a written text file is given below:
+
+| disease | Age-sex-adjusted prevalence | CI | 
+| ------------- | ------------- | ------------
+| asthma | 1300.0 | 1171.1 , 2771.1 
+| diabetes	| 1850.0 | 228.4 , 3471.6 
+| hypertension | 3150.0 | 967.2 , 5332.8
+| depression	| 2450.0 | 489.6 , 4410.4
+
