@@ -4,7 +4,7 @@
 
 - Run `function.py` to build the function for calculating age-sex-adjusted prevalence.
 
-- load data: 
+- Load data: 
 
 `participants = r'participants.txt'` 
 
