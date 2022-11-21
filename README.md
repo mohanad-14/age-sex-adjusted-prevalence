@@ -1,5 +1,5 @@
 # Age-sex-adjusted rate
-🔀 An age-gender-adjusted rate is one of the most useful summary statistics for comparing the impact of diseases that are heavily influenced by age and gender across different populations.
+An age-gender-adjusted rate is one of the most useful summary statistics for comparing the impact of diseases that are heavily influenced by age and gender across different populations.
 
 This repository includes a Python function that calculates the age and sex standardised estimates for a certain disease and/or list of diseases. It also calculates a 95% confidence interval for each estimate.
 
