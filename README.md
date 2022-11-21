@@ -100,9 +100,12 @@ An example of census data (2021 English census data) is given below.
 
 # Output
 
+Please note that the output numbers and estimates may not be realistic as this is just an example to show how the function works.
+
 An example of output data is given below:
 
-Age-sex-adjusted prevalence for ['asthma'] is 1300.0 per 10,000 ( -171.1 , 2771.1 )
+
+Age-sex-adjusted prevalence for ['asthma'] is 1300.0 per 10,000 ( 1171.1 , 2771.1 )
 
 
 Age-sex-adjusted prevalence for ['diabetes '] is 1850.0 per 10,000 ( 228.4 , 3471.6 )
