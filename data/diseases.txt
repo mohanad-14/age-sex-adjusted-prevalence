@@ -1,0 +1,45 @@
+participant_id	disease
+1	asthma
+1	sleep disorders
+1	diabetes 
+2	hypertension
+2	depression
+3	hypertension
+3	obesity
+4	COPD
+4	fatty liver
+4	obesity
+5	intellectual disability
+6	epilepsy
+6	UTI
+7	heat disease
+7	diabetes 
+7	UTI
+7	hypertension
+8	obesity
+8	hypertension
+8	depression
+9	depression
+10	hypertension
+11	depression
+11	hypertension
+12	diabetes 
+13	obesity
+14	obesity
+14	depression
+14	hypertension
+15	heat disease
+15	diabetes 
+16	hypertension
+16	diabetes 
+16	obesity
+16	UTI
+16	COPD
+17	COPD
+17	sleep disorders
+17	asthma
+18	asthma
+19	sleep disorders
+20	COPD
+20	depression
+20	sleep disorders
