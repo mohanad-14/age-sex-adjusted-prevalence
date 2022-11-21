@@ -1,6 +1,4 @@
 # this function is for calculating age-sex-adjusted prevelance for diseases
-# this example uses a 10-year age group and the English 2021 census data as a standard population
-
 
 # import libraries:
 import pandas as pd
@@ -73,4 +71,7 @@ def calc_age_sex_prev_function (participants_file, diseases_file, census_file):
     df['CI'] = ci_list
 # writ out results:
     df.to_csv('table_age_sex_adjusted_rates.txt', index= False, sep='\t')
+    
+    
+    
 
