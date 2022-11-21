@@ -54,9 +54,11 @@ standard formula for determining the 95% CI of a rate is:
 CI = R ± (1.96 x SE)
 
 # Input data
-In order for this function to work, you need three prepared datasets that can be analysed and merged in the process. 
+In order for this function to work, you need three prepared datasets that can be analysed and merged in the process of calculations. 
 
 The estimates are calculated based on three input datasets: 1) participants, 2) diseases and 3) census
+
+Refer to the data folder for more information on each dataset.
 
 ## Exemplar datasets for calculating the age-sex-adjusted rate
 
