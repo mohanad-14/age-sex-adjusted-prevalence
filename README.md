@@ -1,34 +1,42 @@
 # Age-sex-adjusted rate
-An age-gender-adjusted rate is one of the most useful summary statistics for comparing the impact of diseases that are heavily influenced by age and gender across different populations.
+An age-sex-adjusted rate is one of the most useful summary statistics for comparing the impact of diseases that are heavily influenced by age and sex across different populations.
 
 This repository includes a Python function that calculates the age and sex standardised estimates for a certain disease and/or list of diseases. It also calculates a 95% confidence interval for each estimate.
 
-The calculated estimates of diseases can be then used to compare with other estimates of diseases to assess the impact of the disease.
+The calculated estimates of diseases can be then used to compare with other estimates to assess the impact of the disease on a certain population.
 
-This function uses the 2021 England Census as a standard population to determine the percentage for each age-gender group by 10-year age group. You can download the census data from the Office for National Statistics’ s website (found at https://www.ons.gov.uk/census).
+The given example of the function uses the 2021 England Census as a standard population to determine the percentage for each age-sex group by 10-year age group. Also, the population size of 10,000 is used in the example. 
 
-# Steps for calculating the age-gender-adjusted rate:
+(refer to step . You can download the census data from the Office for National Statistics’ s website (found at https://www.ons.gov.uk/census).
+
+# Steps for calculating the age-sex-adjusted rate:
 **Step 1: Break up the population:**
 
-Divide the population into age and gender groups, and then find the total number of cases and the matching age and gender group population.
+Divide the population into age and sex groups, and then find the total number of cases and the matching age and sex group population.
 
-**Step 2: Calculate age-gender specific rate for each age-gender group:**
+**Step 2: Calculate age-sex specific rate for each age-sex group:**
 
-Divide the number of cases by each group's total population and then multiply that number by either 100, 1000, 10000, or 100000. This gives an age-gender specific rate per the chosen population size.
+Divide the number of cases by each group's total population and then multiply that number by either 100, 1000, 10000, or 100000. This gives an age-sex specific rate per the chosen population size.
 
-This function uses a 10000 population size.
+This function uses a 10,000 population size.
 
 **Step 3: Choose a standard population**
 
-Find the percentage of the standard population for each age-gender group.
+Find the percentage of the standard population for each age-sex group.
 
-**Step 4: Calculate the weighted age-gender specific rate for each age-gender group:**
+Below are some examples of standard population:
 
-Multiply each age-gender specific rate by the percent of the standard population for each age-gender group.
+- The European Standard Population: https://www.opendata.nhs.scot/dataset/standard-populations
+
+- The UK census data: https://www.ons.gov.uk/census).
+
+**Step 4: Calculate the weighted age-sex specific rate for each age-sex group:**
+
+Multiply each age-sex specific rate by the percent of the standard population for each age-sex group.
 
 **Step 5: Find the total of the weighted age-specific rates**
 
-Add up the weighted age-specific rates calculated in step 4. The sum of these values is the age-gender adjusted rate for that group of the dataset.
+Add up the weighted age-specific rates calculated in step 4. The sum of these values is the age-sex adjusted rate for that group of the dataset.
 
 **Step 6: Calculate the 95% CI for the estimates**
 
