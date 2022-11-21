@@ -6,13 +6,7 @@
 import pandas as pd
 import numpy as np
 
-
-# load data:
-
-participants = r'participants.txt'
-diseases = r'diseases.txt'
-census = r'census.txt'
-
+# build the function
 def calc_age_sex_prev_function (participants_file, diseases_file, census_file):
     
     participants = pd.read_csv(participants_file, sep='\t')
@@ -79,9 +73,4 @@ def calc_age_sex_prev_function (participants_file, diseases_file, census_file):
     df['CI'] = ci_list
 # writ out results:
     df.to_csv('table_age_sex_adjusted_rates.txt', index= False, sep='\t')
-
-# input data and apply function:
-
-calc_age_sex_prev_function(participants, diseases, census)
-
 
