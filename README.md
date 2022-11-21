@@ -16,13 +16,11 @@ Divide the population into age and sex groups, and then find the total number of
 
 Divide the number of cases by each group's total population and then multiply that number by either 100, 1000, 10000, or 100000. This gives an age-sex specific rate per the chosen population size.
 
-This function uses a 10,000 population size.
-
 **Step 3: Choose a standard population**
 
 Find the percentage of the standard population for each age-sex group.
 
-Below are some examples of standard population:
+Below are some examples of standard populations:
 
 - The European Standard Population: https://www.opendata.nhs.scot/dataset/standard-populations
 
