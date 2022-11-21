@@ -104,18 +104,6 @@ An example of census data (2021 English census data) is given below.
 | 20_29 | female |0.06
 
 
-# Useage
-
-- Prepare the three datasets that match the same format of the examplar datasets.
-- Run `function.py` to build the function for calculating age-sex-adjusted prevalence.
-- load data:
-`participants = r'participants.txt'`
-`diseases = r'diseases.txt'`
-`census = r'census.txt'`
-- Input data and apply function:
-`calc_age_sex_prev_function(participants, diseases, census)`
-
-
 # Output
 
 One text file with all the results (prevalence of diseases) will be written out as dataframe. Also, the results will be printed out as strings in the output section. 
