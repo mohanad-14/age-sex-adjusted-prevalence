@@ -106,7 +106,7 @@ An example of census data (2021 English census data) is given below.
 
 # Useage
 
-- Prepare the three datasets to match the same format of the examplar datasets.
+- Prepare the three datasets that match the same format of the examplar datasets.
 - Run `function.py` to build the function for calculating age-sex-adjusted prevalence.
 - load data:
 `participants = r'participants.txt'`
