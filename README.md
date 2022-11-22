@@ -12,7 +12,7 @@ The given example of the function uses the 2021 England Census as a standard pop
 
 Divide the population into age and sex groups, and then find the total number of cases and the matching age and sex group population.
 
-**Step 2: Calculate age-sex specific rate for each age-sex group:**
+**Step 2: Calculate the age-sex specific rate for each age-sex group:**
 
 Divide the number of cases by each group's total population and then multiply that number by either 100, 1000, 10000, or 100000. This gives an age-sex specific rate per the chosen population size.
 
@@ -30,7 +30,7 @@ Below are some examples of standard populations:
 
 Multiply each age-sex specific rate by the percent of the standard population for each age-sex group.
 
-**Step 5: Find the total of the weighted age-specific rates**
+**Step 5: Find the total of the weighted age-sex-specific rates**
 
 Add up the weighted age-specific rates calculated in step 4. The sum of these values is the age-sex adjusted rate for that group of the dataset.
 
