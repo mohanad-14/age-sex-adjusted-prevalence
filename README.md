@@ -43,7 +43,7 @@ where:
 
 **N** = number of events (cases)
 
-The estimated $$SE$$ can then be used to compute a 95% CI for the rate. The
+The estimated **SE** can then be used to compute a 95% CI for the rate. The
 standard formula for determining the 95% CI of a rate is:
 
 $$CI = {R \pm (1.96 x SE)}$$
