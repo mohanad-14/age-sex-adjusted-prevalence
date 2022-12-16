@@ -37,11 +37,11 @@ $$ SE = {R \over\sqrt{N}} $$
 
 where:
 
-$$SE$$ = standard error
+**SE** = standard error
 
-$$R$$ = (age-sex-adjusted) rate
+**R** = (age-sex-adjusted) rate
 
-$$N$$ = number of events (cases)
+**N** = number of events (cases)
 
 The estimated $$SE$$ can then be used to compute a 95% CI for the rate. The
 standard formula for determining the 95% CI of a rate is:
