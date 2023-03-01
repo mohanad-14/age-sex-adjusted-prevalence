@@ -1,5 +1,5 @@
 # Age-sex-adjusted rate
-**Age and sex adjusted rates** are a useful summary statistics for comparison of disease/morality frequency across different populations.
+**Age and sex adjusted rates** are statistical measures used to compare the rates of a particular disease or health condition between different populations, while controlling for the confounding effects of differences in age and sex distribution.
 
 This repository includes a Python function to calculates age and sex standardised estimates (including 95% confidence intervals (CI)) for any disease and/or list of diseases. The calculated adjusted rates can then be used for comparison to other estimates to assess the impact of the disease(s) in a certain population.
 
