@@ -1,7 +1,7 @@
 # Age-sex-adjusted rate
 **Age and sex adjusted rates** are statistical measures used to compare the rates of a particular disease or health condition between different populations, while controlling for the confounding effects of differences in age and sex distribution.
 
-This repository includes a Python function to calculates age and sex standardised estimates (including 95% confidence intervals (CI)) for any disease and/or list of diseases. The calculated adjusted rates can then be used for comparison to other estimates to assess the impact of the disease(s) in a certain population.
+This repository includes a Python function to calculate age and sex standardised estimates (including 95% confidence intervals (CI)) for any disease and/or list of diseases. The calculated adjusted rates can then be used for comparison to other estimates to assess the impact of the disease(s) on a certain population.
 
 In the example usage of this function, the standard population used is the [2021 England Census](https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/populationandhouseholdestimatesenglandandwalescensus2021) data, which is used to determine the percentage for each age(10-year bins) and sex stratified group.
 
@@ -9,16 +9,16 @@ In the example usage of this function, the standard population used is the [2021
 The following steps are taken.
 
 1. Stratify the population
-   - Divide the sample into age and sex stratified groups, and calculate the number of affected (with a given condition) in each group.
+   - Divide the sample into age and sex stratified groups, and calculate the number of affected individuals (with a given condition) in each group.
 
 2. Calculate the age-sex specific rate for each age-sex group
    - Divide the number of affected by the number of samples in each age-sex stratified group and multiply that with the desired population denominator.
-   - In the given example we use 10.000, given a final adjusted rate of **X** affected per 10.000.
-   - Other studies report rates per 100.000, change the denominator here to suite the purpose. 
+   - In the given example, we use 10.000, given a final adjusted rate of **X** affected per 10.000.
+   - Other studies report rates per 100.000, change the denominator here to suit the purpose. 
 
 3. Choose a standard population
    - Find the percentage of samples for each age-sex group in a given standard population.
-   - Standard population data are made avilable from national census or statistical offices or from regional or international bodies (examples below).
+   - Standard population data are made available from national census or statistical offices or from regional or international bodies (examples below).
 	 - [The European Standard Population](https://www.opendata.nhs.scot/dataset/standard-populations)
 	 - [The UK census data](https://www.ons.gov.uk/census)
 
@@ -30,7 +30,7 @@ The following steps are taken.
    - The sum of these values gives the age-sex adjusted rate for individuals affected in the dataset.
 
 6. Calculate the 95% CI  for the estimates
-   - The CIs are calcualted using the following formular.
+   - The CIs are calculated using the following formula.
 
 
 $$ SE = {R \over\sqrt{N}} $$
@@ -56,7 +56,7 @@ Refer to the data folder for more information on each dataset.
 ## Exemplar datasets for calculating the age-sex-adjusted rate
 
 ### Participants data
-An example of participants data is given below.
+An example of participants' data is given below.
 
 
 | participant_id | sex | age group | 
@@ -68,7 +68,7 @@ An example of participants data is given below.
 | 5 | male | 45-59 |
 
 ### Diseases data
-An example of diseases data is given below.
+An example of disease data is given below.
 
 
 | participant_id | disease |
@@ -99,9 +99,9 @@ An example of census data (2021 English census data) is given below.
 
 # Output
 
-One text file with all the results (prevalence of diseases) will be written out as dataframe. Also, the results will be printed out as strings in the output section. Note that the examplar data is synthetic and the given output estimates are just examplars.
+One text file with all the results (prevalence of diseases) will be written out as a dataframe. Also, the results will be printed out as strings in the output section. Note that the exemplar data is synthetic and the given output estimates are just examples.
 
-**An example of a printed output data is given below:**
+**An example of printed output data is given below:**
 
 ```
 Age-sex-adjusted prevalence for ['asthma'] is 1300.0 per 10,000 ( 1171.1 , 2771.1 )
