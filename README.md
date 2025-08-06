@@ -3,7 +3,7 @@
 
 This repository includes a Python function to calculate age and sex standardised estimates (including 95% confidence intervals (CI)) for any disease and/or list of diseases. The calculated adjusted rates can then be used for comparison to other estimates to assess the impact of the disease(s) on a certain population.
 
-In the example usage of this function, the standard population used is the [2021 England Census](https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/populationandhouseholdestimatesenglandandwalescensus2021) data, which is used to determine the percentage for each age(10-year bins) and sex stratified group.
+In the example usage of this function, the standard population used is the [2021 England Census](https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/populationandhouseholdestimatesenglandandwalescensus2021) data, which is used to determine the percentage for each age (10-year bins) and sex stratified group.
 
 # Calculating the age-sex-adjusted rate:
 The following steps are taken.
@@ -12,9 +12,9 @@ The following steps are taken.
    - Divide the sample into age and sex stratified groups, and calculate the number of affected individuals (with a given condition) in each group.
 
 2. Calculate the age-sex specific rate for each age-sex group
-   - Divide the number of affected by the number of samples in each age-sex stratified group and multiply that with the desired population denominator.
-   - In the given example, we use 10.000, given a final adjusted rate of **X** affected per 10.000.
-   - Other studies report rates per 100.000, change the denominator here to suit the purpose. 
+   - Divide the number of affected by the number of samples in each age-sex stratified group and multiply that by the desired population denominator.
+   - In the given example, we use 10,000, given a final adjusted rate of **X** affected per 10.000.
+   - Other studies report rates per 100,000; change the denominator here to suit the purpose. 
 
 3. Choose a standard population
    - Find the percentage of samples for each age-sex group in a given standard population.
